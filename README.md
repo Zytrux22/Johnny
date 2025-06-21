@@ -1,2 +1,0 @@
-# Johnny
-pa Johnny
