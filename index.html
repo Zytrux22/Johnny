@@ -25,7 +25,7 @@
         0 0 20px #0ff,
         0 0 40px #0ff;
       opacity: 0;
-      animation: fadeIn 3s ease forwards, neonFlicker 1.5s infinite;
+      animation: fadeIn 10s ease forwards, neonFlicker 1.5s infinite;
     }
 
     @keyframes fadeIn {
@@ -54,6 +54,7 @@
       border-radius: 10px;
       cursor: pointer;
       transition: transform 0.2s ease, background-color 0.3s;
+      text-decoration: none;
     }
 
     .btn:hover {
@@ -66,15 +67,16 @@
   <div id="inicio" class="neon-text">Feliz cumpleaños, Johnny</div>
 
   <div id="boton" class="button-container">
-    <button class="btn" href="https://youtu.be/VNCjB-_H6z4">Haz clic aquí</button>
+    <a class="btn" href="https://zytrux22.github.io/Johnny/" target="_blank">Haz clic aquí</a>
   </div>
 
   <script>
-    // Esperar a que termine la animación inicial (3 segundos + 1 extra para estética)
+    // Esperar a que termine la animación inicial (10 segundos + 1 extra para estética)
     setTimeout(() => {
       document.getElementById("inicio").style.display = "none";
       document.getElementById("boton").style.display = "flex";
-    }, 4000);
+    }, 11000);
   </script>
 </body>
 </html>
+
