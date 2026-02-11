@@ -1,0 +1,271 @@
+
+body{
+    background-image: url(../Resource/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    border: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+    line-height: 1.6;
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-style: oblique;
+    padding: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+p{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+    color: #FFF5E1;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+ul{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.466);
+    backdrop-filter: blur(8px) saturate(120%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+li{
+    margin: 0 15px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+li:hover {
+    background-color: rgba(255, 190, 233, 0.671);
+}
+.caja{
+    background-color: rgba(255, 255, 255, 0.404);
+    width: 250px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    padding: 12px 28px;
+    background-color:rgb(109, 79, 94) ;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.btn:hover{
+    background-color: rgb(255, 182, 231);
+    box-shadow: 0 8px 16px rgba(180, 100, 150, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.imagen{
+    width: 250px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.15);
+}
+
+
+
+.btn:active{
+    background-color: rgb(141, 104, 126);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(8px) saturate(120%);
+}
+
+.hijo{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.418);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid-container > div {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.grid-container > div:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 204, 237);
+    color: black;
+}
+
+.nombre{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    backdrop-filter: blur(10px) saturate(120%);
+    
+}
+
+label {
+    display: block;
+    color: black;
+    font-weight: bold;
+    margin: 15px 0 8px 0;
+    font-size: 20px;
+}
+input{
+    background-color: rgb(255, 223, 236);
+    width: 98%;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input::placeholder {
+    color: rgba(73, 52, 63, 0.5);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(180, 100, 150, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card h3 {
+    background-color: rgba(255, 255, 255, 0.733);
+    background-clip: text;
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: rgb(73, 52, 63);
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.card .btn {
+    width: 98%;
+}
